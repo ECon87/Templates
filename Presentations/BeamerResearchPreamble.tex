@@ -1,0 +1,83 @@
+%\documentclass{beamer}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+% \usepackage[latin9]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{subcaption}
+\usepackage{multirow}
+%
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usepackage{calc}
+\usepackage{pgfplots}
+\pgfplotsset{compat = 1.15}
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{tikzmark,fit}
+
+%
+%
+%%\usepackage[authoryear]{natbib}
+%% \setlength{\bibsep}{0.0pt}
+%\usepackage[style=authoryear, bibstyle=authoryear,natbib]{biblatex}
+%\usepackage{csquotes}
+%\addbibresource{jmp_bibliography.bib}
+%
+\usepackage{tabularx,booktabs}
+\usepackage{arydshln}
+\usepackage{graphics} %use the resizebox
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{subcaption}
+%
+%
+%
+%
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Define new column types to use in same tabular tables
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{L}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\makeatletter
+%
+%\renewcommand{\~}{\sim}
+%
+%\newcommand\makebeamertitle{\frame{\maketitle}}%
+%% (ERT) argument for the TOC
+%\AtBeginDocument{%
+	%\let\origtableofcontents=\tableofcontents
+	%\def\tableofcontents{\@ifnextchar[{\origtableofcontents}{\gobbletableofcontents}}
+	%\def\gobbletableofcontents#1{\origtableofcontents}
+%}
+
+
+
+\usetheme{Boadilla}
+\usecolortheme{orchid}
+\setbeamertemplate{footline}[text line]{} % makes the footer EMPTY
+% \setbeamercovered{transparent} % comment out to hide items in pause
+
+
+%\makeatother
+%\author{Evangelos Constantinou} %before begin document to remove warnings
+%\institute{\inst{1} University of Illinois at Urbana-Champaign}
+\institute{PhD, University of Illinois at Urbana-Champaign,
+\\
+evang.constantinou@gmail.com\\
+\vspace{1cm}
+Presentation at: NERA Economic Consulting}
+
+
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
